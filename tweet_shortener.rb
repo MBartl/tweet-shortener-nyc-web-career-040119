@@ -12,6 +12,12 @@ dictionary = {
 }
 
 def word_substituter(string)
-  disctionary.each do |word, substitute|
-    if string.include? word
+  tweet_array = string.split(/ /)
+  tweet_array.each do
+    i = 0
+    while i < tweet_array.length do
+      dictionary.each do |word, substitute|
+        if tweet_array.include? word
+        tweet_array[i].delete
+        
       
