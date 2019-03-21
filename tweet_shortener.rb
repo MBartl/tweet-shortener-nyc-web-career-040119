@@ -13,4 +13,5 @@ dictionary = {
 
 def word_substituter(string)
   disctionary.each do |word, substitute|
-    
+    if string.include? word
+      
