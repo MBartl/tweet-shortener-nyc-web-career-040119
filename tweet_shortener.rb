@@ -12,6 +12,7 @@ dictionary = {
 }
 
 def word_substituter(string)
+  dictionary
   tweet_array = string.split(/ /)
   tweet_array.each do
     i = 0
