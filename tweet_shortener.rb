@@ -36,8 +36,7 @@ def word_substituter(string)
       i += 1
     end
   end
-  tweet_array.join(' ')
-  return tweet_array
+  return tweet_array.join(' ')
 end
         
       
