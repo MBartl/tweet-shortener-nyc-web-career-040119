@@ -17,7 +17,7 @@ def word_substituter(string)
     while i < tweet_array.length do
       dictionary.each do |word, substitute|
         word_holder = word.to_s
-        if tweet_array[i] == word_holder
+        if tweet_array[i] == word_holder.downcase
           tweet_array[i] = substitute
         end
       end
