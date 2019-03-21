@@ -30,7 +30,7 @@ def word_substituter(string)
     while i < tweet_array.length do
       dictionary.each do |word, substitute|
         word_holder = word.to_s
-        if tweet_array.include? word_holder
+        if tweet_array[i] == word_holder
           tweet_array[i] = substitute
         end
       i += 1
