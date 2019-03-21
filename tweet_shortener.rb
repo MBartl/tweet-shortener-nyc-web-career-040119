@@ -18,6 +18,13 @@ def word_substituter(string)
     while i < tweet_array.length do
       dictionary.each do |word, substitute|
         if tweet_array.include? word
-        tweet_array[i].delete
+          tweet_array[i] = substitute
+        end
+      end
+    end
+  end
+  tweet_array.join(' ')
+  return tweet_array
+end
         
       
