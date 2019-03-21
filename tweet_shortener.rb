@@ -33,8 +33,8 @@ def word_substituter(string)
         if tweet_array[i] == word_holder
           tweet_array[i] = substitute
         end
-      i += 1
       end
+      i += 1
     end
   end
   return tweet_array.join(' ')
